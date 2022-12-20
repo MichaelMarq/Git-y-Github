@@ -1,25 +1,36 @@
 Inicializar repositorio local
 
+	Acceder a la carpeta a iniciar
+cd ruta
+	Inicializar git en la carpeta seleccionada
 git init
 
-Configuracion de git
+	Configuracion de git
 
-git config user.namer "MichaelMarq"
-git config user.email correo electronico
-
-
-Configuracion de repositorio local a remoto
-git remote add origin "URL"
+git config user.name "nombre de usuario por conveccion se pone el mismo nombre que el repositorio remoto"
+git config user.email "correo electronico de github"
 
 
-Git estado
+	Configuracion de repositorio local a remoto
+git remote add  "origin   nombre del repositorio remoto que nosotros le damos no es el mismo de github"     "URL"
+
+	Git estado
 git status
 
+	Subir archivos del local al remoto
+primer paso
+git add "."->agregar todos los archivos 	"nombre del archivo a pasar ejemplo hola.txt "
+git commit -m "Confirmacion del commit este es un mensaje culaquiera"
+segundo paso
+git push -u "origin  nombre del repositorio remoto que le dimos"   "master  nombre de la rama"
 
-Clonar un repositorio remoto a local
 
-git clone URL del navegador
 
-Traer los cambios nuevos del repositorio remoto a local
+	Traer los cambios nuevos del repositorio remoto a local
 
 git pull origin->nombre de.  master-> rama.
+
+	Clonar un repositorio remoto a local
+git clone URL del navegador
+
+
